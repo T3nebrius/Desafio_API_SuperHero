@@ -1,0 +1,3 @@
+/**
+ * archivo l+ogicas js
+ */
