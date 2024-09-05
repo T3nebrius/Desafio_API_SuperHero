@@ -1,3 +1,7 @@
 .titulo{
     color: white;
 }
+
+.ancho{
+    max-width: 540px;
+}
