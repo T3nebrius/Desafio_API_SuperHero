@@ -22,47 +22,53 @@
     https://superheroapi.com/api/c4cefd321c24a03cad4a667d650ee553/213
     API KEY: c4cefd321c24a03cad4a667d650ee553
     -->
-    <div class="container">
+    <div class="container text-center">
         <div class="navbar navbar-dark bg-dark titulo">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">SuperHero</a>
-              </div>
+            </div>
         </div>
+    
         <div id="resultado"></div>
-        <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img id="foto" src="..." class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
+    
+        <div class="card mb-3 mx-auto" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img id="foto" src="assets/img/default.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Nombre: <span id="nombre"></span></h5>
-                      <p id="conexiones" class="card-text"></p>
-                      <hr>
-                      <p id="publicado" class="card-text"></p>
-                    <hr>
-                      <p id="ocupacion" class="card-text"></p>
-                      <hr>
-                      <p id="primeraAparicion" class="card-text"></p>
-                      <hr>
-                      <p id="altura" class="card-text"></p>
-                      <hr>
-                      <p id="peso" class="card-text"></p>
-                      <hr>
-                      <p id="alianzas" class="card-text"></p>
-                  </div>
-                  <div class="col-md-6">
+                        <h5 class="card-title">Nombre: <span id="nombre"></span></h5>
+                        <p id="conexiones" class="card-text"></p>
+                        <hr>
+                        <p id="publicado" class="card-text"></p>
+                        <hr>
+                        <p id="ocupacion" class="card-text"></p>
+                        <hr>
+                        <p id="primeraAparicion" class="card-text"></p>
+                        <hr>
+                        <p id="altura" class="card-text"></p>
+                        <hr>
+                        <p id="peso" class="card-text"></p>
+                        <hr>
+                        <p id="alianzas" class="card-text"></p>
+                    </div>
+                </div>
+                <div class="col-md-12">
                     <div id="chartContainer" style="height: 370px; width: 100%;"></div>
-                  </div>
                 </div>
             </div>
-            </div>
         </div>
+    
         <h3 class="text-center">Encuentra tu SuperHero</h3>
-        <h4>Ingresa el número del SuperHero a buscar</h4>
-        <input id="superheroId" type="number">
-        <button id="botonSubmit" class="btn btn-primary">Buscar</button>
+        <h4 class="text-center">Ingresa el número del SuperHero a buscar</h4>
+    
+        <div class="d-flex justify-content-center">
+            <input id="superheroId" type="number" class="form-control w-50 text-center">
+        </div>
+        <button id="botonSubmit" class="btn btn-primary mt-2">Buscar</button>
     </div>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
     <script src="assets/js/logic.js"></script>

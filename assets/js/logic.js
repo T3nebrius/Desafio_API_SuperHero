@@ -20,7 +20,7 @@ boton.on('click', function() {
     mensaje.text('');
     
     if (id.trim() === '') {
-        mensaje.text('Por favor, ingrese un ID de superhéroe.');
+        alert('Por favor, ingrese un ID de superhéroe.');
         return;
     }
 
@@ -75,7 +75,7 @@ boton.on('click', function() {
                 });
                 chart.render();
             } else if (data.response === "error") {
-                mensaje.text(`Error: ${data.error}`);
+                alert(`Error: ${data.error}`);
             } else {
                 mensaje.text('Respuesta inesperada de la API.');
             }
